@@ -12,8 +12,11 @@
       "@services/*": [
         "src/services/*"
       ],
-      "@context/*": [
-        "src/context/*"
+      "@contexts/*": [
+        "src/contexts/*"
+      ],
+      "@navigation/*": [
+        "src/navigation/*"
       ],
       "@types": [
         "src/types/index.ts"

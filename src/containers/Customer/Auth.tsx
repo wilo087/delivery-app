@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import AsyncStorage from '@react-native-community/async-storage'
-import CustomerAuth from '@components/Customer/CustomerAuth'
-import CustomerProfile from '@components/Customer/CustomerProfile'
+import CustomerAuth from '@components/Customer/Auth'
+// import CustomerProfile from '@components/Customer/Profile'
 import apiService from '@services/aws-api'
 
 interface LoginResponse {
@@ -32,7 +32,8 @@ const CustomerAuthContainer: React.FC = () => {
   }
 
   if (isLoggedIn) {
-    return <CustomerProfile />
+    console.log('isLoggedIn', isLoggedIn)
+    // return <CustomerProfile />
   }
 
   return (

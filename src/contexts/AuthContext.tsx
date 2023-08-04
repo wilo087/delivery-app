@@ -9,7 +9,7 @@ export const AuthContext = createContext<AuthContextData>({
   logoutDelivery: () => {},
 })
 
-export const AuthProvider: React.FC = ({ children }: any) => {
+export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
   const [customer, setCustomer] = useState<User | null>(null)
   const [delivery, setDelivery] = useState<User | null>(null)
 

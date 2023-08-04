@@ -23,3 +23,11 @@ export interface Cart {
   products: Product[]
   total: number
 }
+
+export interface ProfileComponentProps {
+  user: {
+    name: string
+    email: string
+  }
+  onLogout: () => void
+}
